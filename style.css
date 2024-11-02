@@ -1,0 +1,1209 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 15px;
+    background: #6F2DD3;
+}
+
+::-webkit-scrollbar-thumb:active{
+    background: #B09DF5;
+
+}
+
+
+
+
+::selection{
+    background-color: #6F2DD3;
+    color: white;
+}
+
+/*  navbar css*/
+
+header{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+}
+
+header .logo img{
+    width: 250px;
+    cursor: pointer;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+
+}
+
+header ul li{
+    margin: 0 40px;
+    
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #6F2DD3;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+header ul li a i{
+    transition: 0.5s;
+}
+
+header ul li a:hover i{
+    transform: rotate(180deg);
+}
+
+.last-list:hover{
+    color: #B09DF5;
+}
+
+.btn a button{
+    cursor: pointer;
+    font-weight:700;
+    padding: 15px 30px;
+    border: none;
+}
+
+.btn a button.in{
+    background: none;
+    color:#6F2DD3 ;
+    border: 2px solid #6F2DD3;
+}
+
+.btn a button.in:hover{
+    background-color: #B09DF5;
+    border-color:#B09DF5 ;
+    color: white;
+}
+
+.btn a button.up{
+    background-color: #6F2DD3;
+    color: white;
+    border: 2px solid #6F2DD3 ;
+
+}
+.btn a button.up:hover{
+    color:white ;
+    background-color: #B09DF5;
+    border-color: #B09DF5;
+}
+
+#cart-icon{
+    color: #6F2DD3;
+    font-size: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+#cart-icon:hover{
+    transform: rotate(360deg);
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 20px;
+}
+
+.dropdown li {
+    margin: 20px ;
+}
+
+.dropdown li a{
+    color: #6F2DD3;
+}
+
+.dropdown li a:hover{
+    color: #B09DF5;
+}
+
+header ul li:hover .dropdown{
+    display: block;
+}
+
+/*  fin navbar css*/
+
+
+
+/* ( Sign in,  Sign up, Forgot password) css*/
+
+.card-in{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    height: 100vh;
+    width: 100%;
+}
+.card-in .container-in{
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 40px 30px; 
+}
+
+.card-in .container-in h1{
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+
+.card-in .container-in input{
+    margin-bottom: 5px;
+    outline: none;
+    background: none;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid #6F2DD3;
+    font-size: 13px;
+    padding: 10px 10px 10px 0;
+}
+
+.card-in .container-in a{
+    text-decoration: none;
+    color: #6F2DD3;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.card-in .container-in a:hover{
+    color: #B09DF5;
+}
+
+
+
+
+.card-in .container-in button{
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    font-size: 15px;
+    border: none;
+    color: white;
+    background-color: #6F2DD3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.card-in .container-in button:hover{
+    transform: scale(1.02);
+}
+
+
+.card-in .container-in button.social{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 13px;
+
+}
+
+.card-in .container-in button.social i{
+    margin-right: 10px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.card-in .container-in button.social#tw{
+    background-color: #1DA1F2;
+}
+
+.card-in .container-in button.social#fb{
+    background-color: #3b5998;
+}
+
+
+.card-in .container-in h6{
+    text-align: center;
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+/*  Fin  Sign in css*/
+
+
+/*  main css*/
+
+main{
+
+    width: 100%;
+    padding:20px 10%;
+
+}
+
+section{
+    margin-bottom: 130px;
+}
+
+/*  sec-1 css*/
+
+
+a.scroll{
+    text-decoration: none;
+    color: #6F2DD3;
+    position: fixed;
+    margin: 20px;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 35px;
+    transition: 1s;
+}
+
+a.scroll:hover{
+    transform: scale(1.08);
+}
+
+main .sec-1{
+    height: calc(100vh -22.5px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+main .sec-1 h1{
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+main .sec-1 h1 span{
+    color: #6F2DD3;
+}
+
+
+
+main .sec-1 p{
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-top: 30px;
+    max-width: 740px;
+}
+
+/* Fin sec-1 css*/
+
+
+
+
+/*  sec-2 css*/
+
+
+
+
+main .sec-2{
+    width: 100%;
+}
+
+
+main .sec-2 h1,.sec-3 h1,.sec-4 h1{
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 120px;
+    
+}
+
+
+main .sec-2 h1 span,.sec-3 h1 span,.sec-4 h1 span{
+    margin-left: 10px;
+    color: #6F2DD3;
+}
+
+
+main .sec-2 h2{
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+main .sec-2 .pr .pop-card{
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+main .sec-2 .pr .pop-card i{
+    color: #6F2DD3;
+    background: transparent;
+    border: 2px solid #6F2DD3;
+    border-radius: 100% ;
+    font-size: 50px;
+    font-weight: 900;
+    cursor: pointer;
+}
+main .sec-2 .pr .pop-card i:hover{
+    color: white;
+    background-color: #6F2DD3;
+
+
+}
+
+main .sec-2 .pr .pop-card div{
+    position: relative;
+    max-width: 250px;
+    margin: 20px 2%;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s;
+}
+main .sec-2 .pr .pop-card div:hover{
+    box-shadow: rgba(100, 100, 111, 0.205) 0px 7px 29px 0px;
+    transform: translateY(-5%);
+}
+
+
+main .sec-2 .pr .pop-card div img{
+    height: auto;
+    width: 250px;
+    transition: 1s;
+}
+
+main .sec-2 .pr .pop-card div img:hover{
+    transform: scale(1.03);
+}
+
+
+main .sec-2 .pr .pop-card div h4{
+    font-weight: 500;
+    color: rgb(26, 26, 26);
+}
+
+main .sec-2 .pr .pop-card div h5{
+    margin-top: 5px;
+    font-weight: 500;
+    color: gray;
+    text-transform: uppercase;
+}
+
+
+main .sec-2 .pr .pop-card div h3{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: red;
+    font-size: 15px;
+}
+
+
+main .sec-2 .pr .pop-card div a button{
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    background-color: #6F2DD3;
+    color: white;
+    text-transform: uppercase;
+    display: none;
+    position: absolute;
+    cursor: pointer;
+}
+main .sec-2 .pr .pop-card div a button:hover{
+    background-color: #B09DF5;
+    color: white;
+}
+
+
+main .sec-2 .pr .pop-card div:hover button{
+    display: block;
+}
+
+
+main .sec-2 .pr a.view-all button{
+    margin: 10% 0 0 0;
+    border: 2px solid #6F2DD3;
+    padding: 10px 30px;
+    background-color: transparent;
+    color: #6F2DD3;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+main .sec-2 .pr a.view-all button:hover{
+    background-color: #6F2DD3;
+    color: white;
+}
+/* Fin sec-2 css*/
+
+
+
+
+
+/*  sec-3 css*/
+
+main .sec-3{
+    width: 100%;
+}
+
+main .sec-3 .about-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .sec-3 .about-content .who{
+    padding-right: 40px;
+    width: 60%;
+}
+
+main .sec-3 .about-content .who p{
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #525252;
+}
+
+main .sec-3 .about-content h2{
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main .sec-3 .about-content .why{
+    border-left: 2px #B09DF5 solid;
+    padding-left: 40px;
+    width: 40%;
+}
+
+main .sec-3 .about-content .why .why-icon div{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+main .sec-3 .about-content .why .why-icon div i{
+    font-size: 25px ;
+    padding: 15px;
+    margin-right: 20px;
+    border-radius: 100%;
+    background-color: #6F2DD3;
+    color: white;
+}
+
+main .sec-3 .about-content .why .why-icon div h3{
+    letter-spacing: 2px;
+}
+
+
+/* Fin sec-3 css*/
+
+
+
+/*  sec-4 css*/
+
+
+main .sec-4{
+    width: 100%;
+    height: 100vh;
+}
+
+main .sec-4 .contact-content{
+    width: 100%;
+    display: flex;
+}
+
+main .sec-4 .contact-content .contact-formul{
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.39) 0px 7px 29px 0px;
+    width: 60%;
+    margin-right: 50px;
+}
+main .sec-4 .contact-content .contact-formul input,textarea{
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: rgb(228, 228, 228);
+    letter-spacing: 2px;
+    width: 100%;
+    font-size: 14px;
+}
+
+main .sec-4 .contact-content .contact-formul .ur-info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main .sec-4 .contact-content .contact-formul .ur-info input{
+    width: 49%;
+}
+
+
+main .sec-4 .contact-content h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main .sec-4 .contact-content .contact-formul button{
+    border: none;
+    border-radius: 15px;
+    padding: 10px 90px ;
+    background-color: #6F2DD3;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    transition: 8ms;
+}
+main .sec-4 .contact-content .contact-formul button:hover{
+    transform: scale(1.02);
+}
+
+
+main .sec-4 .contact-content .contact-info{
+    padding: 20px;
+}
+
+
+main .sec-4 .contact-content .contact-info div{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+main .sec-4 .contact-content .contact-info div i{
+    color: #6F2DD3;
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+
+main .sec-4 .contact-content .contact-info div i:hover{
+    color: #B09DF5;
+}
+
+    /*  fin sec-4 css*/
+
+/*  fin main css*/
+
+
+
+/* footer css*/
+
+footer{
+    width: 100%;
+    background-color: #6F2DD3;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;
+}
+
+footer ul{
+    list-style: none;
+}
+footer ul li h3{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+footer ul li{
+    margin-bottom: 10px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #B09DF5;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+}
+
+
+footer ul  li i{
+    background-color: #B09DF5;
+    color: #6F2DD3;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+
+/* Fin footer css*/
+
+
+
+
+/* product category css*/
+
+
+.categorys{
+    
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.categorys div{
+    padding: 20px;
+    overflow: hidden;
+    margin: 70px 40px 0 0;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.39) 0px 7px 29px 0px;
+    transition: 0.3S;
+}
+.categorys div:hover{
+    transform: scale(1.05);
+}
+
+.categorys div img{
+    max-width: 200px;
+}
+
+.categorys a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.categorys div span{
+    color: #6F2DD3;
+    font-weight: 600;
+}
+
+
+
+/* Fin product category css*/
+
+
+
+/* playstations products css*/
+
+.play-content{
+    width: 100%;
+    padding:20px 10%;
+}
+.play-content div {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap ;
+}
+
+.play-content div div {
+    max-width: 250px;
+    min-width: 30%;
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+    margin: 2% 15px;
+    cursor: pointer;
+    transition: 1s;
+    position: relative;
+    padding: 30px ;    
+    box-shadow: rgba(100, 100, 111, 0.226) 0px 7px 29px 0px;
+    word-break: break-all;
+    border-radius: 15px;
+
+}
+.play-content div div h4{
+    color: #6d6d6d;
+    margin-top: 10px;
+}
+
+.play-content div div h3{
+    color: red;
+    margin-top: 10px;
+
+}
+.play-content div div:hover{
+
+    transform: translateY(-5%);
+}
+
+.play-content div div a img{
+    max-width: 200px;
+    transition: 1s;
+}
+.play-content div div:hover img{
+    transform: scale(1.1);
+
+}
+
+
+.play-content div div a button{
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 20px;
+    border: none;
+    background-color: #6F2DD3;
+    color: white;
+    display: none;
+    text-transform: uppercase;
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    border-radius: 0px 0px 15px 15px;
+
+}
+
+.play-content div div a button:hover{
+    background-color: #B09DF5;
+    color: white;
+
+}
+
+.play-content div div:hover button{
+    display: block;
+}
+
+
+.play-content h3.t{
+    color: #3b5998;
+    margin: 40px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+
+/* Fin playstations products css*/
+
+
+
+
+/* pc products css*/
+
+
+.pc-content{
+    width: 100%;
+    padding:20px 10%;
+}
+.pc-content div {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap ;
+}
+
+.pc-content div div {
+    word-break: break-all;
+    max-width: 250px;
+    min-width: 30%;
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+    margin: 2% 15px;
+    cursor: pointer;
+    transition: 1s;
+    position: relative;
+    padding: 30px ;
+    box-shadow: rgba(100, 100, 111, 0.226) 0px 7px 29px 0px;
+    border-radius: 15px;
+}
+.pc-content div div:hover{
+
+    transform: translateY(-5%);
+}
+
+.pc-content div div a img{
+    max-width: 200px;
+    transition: 1s;
+}
+.pc-content div div:hover img{
+    transform: scale(1.1);
+
+}
+
+
+.pc-content div div a button{
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 20px;
+    border: none;
+    background-color: #6F2DD3;
+    color: white;
+    display: none;
+    text-transform: uppercase;
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.pc-content div div a button:hover{
+    background-color: #B09DF5;
+    color: white;
+
+}
+
+.pc-content div div:hover button{
+    display: block;
+}
+
+
+.pc-content div div h4{
+    color: #6d6d6d;
+    margin-top: 10px;
+}
+
+.pc-content div div h3{
+    color: red;
+    margin-top: 10px;
+
+}
+
+
+.pc-content h3.t{
+    color: #3b5998;
+    margin: 40px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+/* Fin pc products css*/
+
+
+
+.menu-icon{
+    color: #6F2DD3;
+    font-size: 40px;
+    display: none;
+}
+
+
+.respo{
+    background-color: #6F2DD3;
+    text-align: center;
+    font-size: 20px;
+    flex-direction: column;
+    display: flex;
+    position: fixed;
+    top: 15%;
+    right: -100%;
+    height: max-content;
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.534) 0px 7px 29px 0px;
+    z-index: 1;
+    transition:   0.5s;
+}
+
+.respo a{
+    text-decoration: none;
+    color: white;
+    margin: 20px 0;
+}
+#check{
+    display: none;
+}
+
+
+
+
+
+
+
+/* Media querty */
+
+
+@media (max-width:1365px) {
+    main .sec-2 .pr .pop-card div img{
+        width: 200px;
+    }
+    
+    main .sec-2 .pr .pop-card i{
+        display: none;
+    }
+}
+
+@media (max-width:1108px) {
+    
+    header ul li{
+        margin: 0 15px;
+
+    }
+    .btn a button{
+        cursor: pointer;
+        font-weight:700;
+        padding: 10px 20px;
+        border: none;
+    }
+    main .sec-1 h1{
+        letter-spacing: 2px;
+        font-weight: 900;
+        font-size: 40px;
+    }
+    
+    main .sec-1 p{
+        letter-spacing: 1px;
+        font-size: 15px;
+        margin-top: 30px;
+        max-width: 740px;
+    }
+    
+
+    main .sec-1 .home-pic img{
+        width: 400px;
+    }
+
+    
+
+}
+
+
+@media (max-width:928px) {
+    header ul li{
+        margin: 0 15px;
+
+    }
+    header .logo img{
+        width: 200px;
+    }
+    .btn a button{
+        font-weight:700;
+        padding: 5px 15px;
+    }
+
+    main .sec-1{
+        flex-direction: column-reverse;
+    }
+    main .sec-1 h1{
+        margin-top: 25px;
+        letter-spacing: 2px;
+        font-size: 40px;
+    }
+    
+    main .sec-1 p{
+        letter-spacing: 1px;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    main .sec-2 .pr .pop-card div img{
+        width: 160px;
+    }
+    
+    main .sec-2 .pr .pop-card i{
+        display: none;
+    }
+
+    main .sec-3 .about-content .why .why-icon div{
+        margin-bottom: 25px;
+    }
+
+    main .sec-3 .about-content .who{
+        text-align: center;
+    }
+
+
+    
+    
+}
+
+
+@media (max-width:800px) {
+
+
+    header .menu,.btn,i.bx-cart{
+        display: none;
+    }
+
+    .menu-icon{
+
+        display: block;
+    }
+
+
+    #check:checked ~ .respo{
+        right: 0;
+    }
+
+
+
+
+    main .sec-3 .about-content .why .why-icon div i{
+        font-size: 20px ;
+        padding: 10px;
+        margin-right: 15px;
+    }
+    
+    main .sec-3 .about-content .why .why-icon div h3{
+        letter-spacing: 1px;
+        font-size: 15px;
+    }
+    main .sec-3 .about-content .who p{
+        line-height: 20px;
+        font-size: 15px;
+    }
+    
+    main .sec-3 .about-content h2{
+        margin-bottom: 15px;
+    }
+
+
+
+
+    main .sec-4 .contact-content .contact-formul{
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: rgba(100, 100, 111, 0.39) 0px 7px 29px 0px;
+        width: 60%;
+        margin-right: 40px;
+    }
+
+    main .sec-4 .contact-content .contact-info{
+        padding: 15px;
+    }
+    main .sec-4 .contact-content .contact-info div h6{
+        font-size: 15PX;
+    }
+    
+    
+
+}
+
+
+
+@media (max-width:648px) {
+
+
+
+    main .sec-4 .contact-content{
+        display: block;
+        }
+
+    main .sec-4 .contact-content .contact-formul{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    main .sec-3 .about-content{
+        margin: none;
+        width: 100%;
+        display: block;
+    }
+    main .sec-3 .about-content .who{
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+
+    main .sec-3 .about-content .who p{
+        text-align: start;
+    }
+
+    main .sec-3 .about-content .why{
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+
+
+    footer ul li h3{
+        font-size: 15px;
+    }
+    footer ul li a{
+        font-size: 15px;
+    }
+
+    
+    
+}
+
+
+@media (max-width:564px) {
+    a.scroll{
+    
+        margin: 20px 5px;
+        padding: 3px;
+        font-size: 25px;
+    }
+
+
+
+    footer ul li h3{
+        font-size: 13px;
+    }
+    footer ul li a{
+        font-size: 13px;
+    }
+}
+
+
+
+@media (max-width:428px) {
+
+    main .sec-2 h1,.sec-3 h1,.sec-4 h1{
+        font-size: 30px;
+    }
+
+    main .sec-1 h1{
+        font-size: 35px;
+    }
+    main .sec-1 .home-pic img{
+        width: 300px;
+    }
+    footer ul li h3{
+        font-size: 10px;
+    }
+    footer ul li a{
+        font-size: 10px;
+    }
+
+}
+
+@media (max-height:568px){
+    footer{
+        margin-top: 150%;
+    }
+}
+
+
+
